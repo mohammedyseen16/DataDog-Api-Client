@@ -14,10 +14,10 @@ import java.util.HashMap;
 import java.util.Random;
 
 public class DataDog {
-    static void Clinet() {
+    static void Client() {
         // Replace with your Datadog API and App keys
-        String api_key = "f476520fe253cfd758cc17e349cf5586";
-        String app_key = "5b0134a302238ba5f1a130411a10e66c72ea89a2";
+        String api_key = "";
+        String app_key = "";
 
         HashMap<String, String> Secret = new HashMap<String, String>();
 
