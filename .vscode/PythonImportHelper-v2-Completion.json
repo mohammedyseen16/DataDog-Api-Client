@@ -1,0 +1,128 @@
+[
+    {
+        "label": "configparser",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "configparser",
+        "description": "configparser",
+        "detail": "configparser",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "ApiClient",
+        "importPath": "datadog_api_client",
+        "description": "datadog_api_client",
+        "isExtraImport": true,
+        "detail": "datadog_api_client",
+        "documentation": {}
+    },
+    {
+        "label": "Configuration",
+        "importPath": "datadog_api_client",
+        "description": "datadog_api_client",
+        "isExtraImport": true,
+        "detail": "datadog_api_client",
+        "documentation": {}
+    },
+    {
+        "label": "MetricsApi",
+        "importPath": "datadog_api_client.v2.api.metrics_api",
+        "description": "datadog_api_client.v2.api.metrics_api",
+        "isExtraImport": true,
+        "detail": "datadog_api_client.v2.api.metrics_api",
+        "documentation": {}
+    },
+    {
+        "label": "MetricIntakeType",
+        "importPath": "datadog_api_client.v2.model.metric_intake_type",
+        "description": "datadog_api_client.v2.model.metric_intake_type",
+        "isExtraImport": true,
+        "detail": "datadog_api_client.v2.model.metric_intake_type",
+        "documentation": {}
+    },
+    {
+        "label": "MetricPayload",
+        "importPath": "datadog_api_client.v2.model.metric_payload",
+        "description": "datadog_api_client.v2.model.metric_payload",
+        "isExtraImport": true,
+        "detail": "datadog_api_client.v2.model.metric_payload",
+        "documentation": {}
+    },
+    {
+        "label": "MetricPoint",
+        "importPath": "datadog_api_client.v2.model.metric_point",
+        "description": "datadog_api_client.v2.model.metric_point",
+        "isExtraImport": true,
+        "detail": "datadog_api_client.v2.model.metric_point",
+        "documentation": {}
+    },
+    {
+        "label": "MetricResource",
+        "importPath": "datadog_api_client.v2.model.metric_resource",
+        "description": "datadog_api_client.v2.model.metric_resource",
+        "isExtraImport": true,
+        "detail": "datadog_api_client.v2.model.metric_resource",
+        "documentation": {}
+    },
+    {
+        "label": "MetricSeries",
+        "importPath": "datadog_api_client.v2.model.metric_series",
+        "description": "datadog_api_client.v2.model.metric_series",
+        "isExtraImport": true,
+        "detail": "datadog_api_client.v2.model.metric_series",
+        "documentation": {}
+    },
+    {
+        "label": "generate_random_float",
+        "kind": 2,
+        "importPath": "python-client.custom_metircs.main",
+        "description": "python-client.custom_metircs.main",
+        "peekOfCode": "def generate_random_float(min_value, max_value):\n    return random.uniform(min_value, max_value)\nwhile True:\n    # Pick a random item from the list\n    random_devices = random.choice(devices)\n    random_hosts = random.choice(hosts)\n    random_float = generate_random_float(0.0, 1.0)\n    # print(f\"Random float: {random_float}\")\n    body = MetricPayload(\n        series=[",
+        "detail": "python-client.custom_metircs.main",
+        "documentation": {}
+    },
+    {
+        "label": "config",
+        "kind": 5,
+        "importPath": "python-client.custom_metircs.main",
+        "description": "python-client.custom_metircs.main",
+        "peekOfCode": "config = configparser.ConfigParser()\n# Read the config.ini file\nconfig.read('config.ini')\ndevices = ['windows', 'mac', 'TV', 'others']\nhosts = ['localhost', 'aa:bb:cc:dd:ee', 'xx:yy:zz:aa', 'others']\ndef generate_random_float(min_value, max_value):\n    return random.uniform(min_value, max_value)\nwhile True:\n    # Pick a random item from the list\n    random_devices = random.choice(devices)",
+        "detail": "python-client.custom_metircs.main",
+        "documentation": {}
+    },
+    {
+        "label": "devices",
+        "kind": 5,
+        "importPath": "python-client.custom_metircs.main",
+        "description": "python-client.custom_metircs.main",
+        "peekOfCode": "devices = ['windows', 'mac', 'TV', 'others']\nhosts = ['localhost', 'aa:bb:cc:dd:ee', 'xx:yy:zz:aa', 'others']\ndef generate_random_float(min_value, max_value):\n    return random.uniform(min_value, max_value)\nwhile True:\n    # Pick a random item from the list\n    random_devices = random.choice(devices)\n    random_hosts = random.choice(hosts)\n    random_float = generate_random_float(0.0, 1.0)\n    # print(f\"Random float: {random_float}\")",
+        "detail": "python-client.custom_metircs.main",
+        "documentation": {}
+    },
+    {
+        "label": "hosts",
+        "kind": 5,
+        "importPath": "python-client.custom_metircs.main",
+        "description": "python-client.custom_metircs.main",
+        "peekOfCode": "hosts = ['localhost', 'aa:bb:cc:dd:ee', 'xx:yy:zz:aa', 'others']\ndef generate_random_float(min_value, max_value):\n    return random.uniform(min_value, max_value)\nwhile True:\n    # Pick a random item from the list\n    random_devices = random.choice(devices)\n    random_hosts = random.choice(hosts)\n    random_float = generate_random_float(0.0, 1.0)\n    # print(f\"Random float: {random_float}\")\n    body = MetricPayload(",
+        "detail": "python-client.custom_metircs.main",
+        "documentation": {}
+    }
+]
