@@ -8,7 +8,7 @@ object DataApiClinet {
   def main(args: Array[String]): Unit = {
     print("hello")
 
-    DataDog.Clinet()
+    val client = DataDog.Client();
 
     val rand = new Random
     val rand_int1 = rand.nextInt(1000)
