@@ -19,8 +19,9 @@ config = configparser.ConfigParser()
 # Read the config.ini file
 config.read('config.ini')
 
-devices = ['windows', 'mac', 'TV', 'others']
-hosts = ['localhost', 'aa:bb:cc:dd:ee', 'xx:yy:zz:aa', 'others']
+devices = ['windows', 'mac', 'TV', 'smartphone', 'tablet', 'router', 'printer', 'game console', 'smartwatch', 'others']
+hosts = ['localhost', '00:1A:2B:3C:4D:5E', 'AA:BB:CC:DD:EE:FF', '77:88:99:AA:BB:CC', '11:22:33:44:55:66', '01:23:45:67:89:AB', '12:34:56:78:9A:BC', 'AB:CD:EF:12:34:56', '98:76:54:32:10:FE', '44:55:66:77:88:99']
+cities = ['New York', 'Tokyo', 'Paris', 'Sydney', 'Dubai', 'São Paulo', 'London', 'Mumbai', 'Cairo', 'Shanghai']
 
 def generate_random_float(min_value, max_value):
     return random.uniform(min_value, max_value)
@@ -30,8 +31,9 @@ while True:
     # Pick a random item from the list
     random_devices = random.choice(devices)
     random_hosts = random.choice(hosts)
+    random_cities = random.choice(cities)
 
-    random_float = generate_random_float(0.0, 1.0)
+    random_float = generate_random_float(0.0, 1000.0)
     # print(f"Random float: {random_float}")
     body = MetricPayload(
         series=[
@@ -44,7 +46,7 @@ while True:
                         value=random_float,
                     ),
                 ],
-                tags=[f'host:{random_hosts}', f'device:{random_devices}'],
+                tags=[f'host:{random_hosts}', f'device:{random_devices}', f'cities:{random_cities}'],
                 resources=[
                     MetricResource(
                         name="localhost",
@@ -62,5 +64,4 @@ while True:
     with ApiClient(configuration) as api_client:
         api_instance = MetricsApi(api_client)
         response = api_instance.submit_metrics(body=body)
-
         print(response)
